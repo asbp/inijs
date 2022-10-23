@@ -1,9 +1,12 @@
 import tof from "./tof";
 
 const ini = (function () {
-    let version = '0.1';
+    var pjson = require('./package.json');
+
+    let version = pjson.version;
 
     const funcExports = {
+        version,
         ...tof
     }
 

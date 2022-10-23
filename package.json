@@ -5,10 +5,10 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "eslint tsconfig.json",
+    "test": "eslint",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "eslint tsconfig.json",
+    "lint": "eslint",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
@@ -36,6 +36,8 @@
   "devDependencies": {
     "@types/jest": "^29.2.0",
     "@types/node": "^18.11.3",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
     "eslint": "^8.26.0",
     "jest": "^29.2.1",
     "prettier": "^2.7.1",
